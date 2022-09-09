@@ -9,7 +9,6 @@ html {
 }
 .container {
   max-width: 1440px;
-  padding: 0 20px;
   margin: 0 auto;
 }
 img {
@@ -39,12 +38,12 @@ img {
   margin-right: 72px;
   margin-top: 32px;
   justify-content: flex-end;
+  list-style: none;
 }
 .img-absolute {
   position: absolute;
   max-width: 50%;
   margin-top: 125px;
-  margin-left: -20px;
 }
 .menu-container > h1 {
   font-size: 76px;
@@ -60,16 +59,79 @@ img {
 }
 .menu li a {
   color: #FFFFFF;
+  text-decoration: none;
+}
+.menu-btn {
+  display: none;
 }
 @media screen and (max-width: 1439px) {
 }
 @media screen and (max-width: 1280px) {
+  .menu-container > h1 {
+    font-size: 59px;
+    position: absolute;
+
+  }
+  .menu-container > p {
+    font-size: 16px;
+    margin-top: 420px;
+  }
 }
 @media screen and (max-width: 1024px) {
+  .header .container {
+    flex-direction: column;
+  }
+  .img-absolute {
+    position: relative;
+    max-width: 100%;
+    margin-top: 0;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+    position: absolute;
+    top: 24px;
+    right: 20px;
+  }
+ .logo-container-row > .logo {
+  margin-left: -88%;
+ }
+ .menu-container {
+  height: auto;
+ }
+  .menu-container > h1 {
+    position: relative;
+    margin-top: 48px;
+    margin-left: 20px;
+  }
+  .menu-container > p {
+    position: relative;
+    margin-top: 16px;
+    margin-left: 20px;
+    margin-bottom: 48px;
+  }
+  .logo-container-row {
+    width: 100%;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 768px) {
+  .logo-container-row {
+    align-items: flex-start;
+  }
+  .logo-container-row > .logo {
+    margin-left: 20px;
+  }
 }
 @media screen and (max-width: 576px) {
+
+  .menu-container > h1 {
+    font-size: 32px;
+  }
 }
 @media screen and (max-width: 420px) {
 }
